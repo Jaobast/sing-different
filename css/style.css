@@ -350,7 +350,7 @@ footer img{
     }
 
     .tabs {
-      bottom: 1%;
+      bottom: 0.5%;
       left: calc(50% - 25px);
       transform: translateX(-50%);
     }
