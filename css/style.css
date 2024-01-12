@@ -147,7 +147,7 @@ header .logo {
 .tabs {
   position: absolute;
   bottom: 3%;
-  left: 50%;
+  left: calc(50% - 40px);
   transform: translateX(-50%);
 	display: flex;
 	list-style: none;
@@ -347,6 +347,12 @@ footer img{
       width: 40px;
       height: 40px;
       bottom: 1%;
+    }
+
+    .tabs {
+      bottom: 1%;
+      left: calc(50% - 20px);
+      transform: translateX(-50%);
     }
 
     .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) img,
