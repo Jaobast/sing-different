@@ -79,7 +79,7 @@ header .logo {
   min-height: 130vh;
   background: url('../img/bearbeitet/sing_different_img_5.jpg');
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 35% 100%;
 
 
   display: flex;
@@ -222,7 +222,7 @@ header .logo {
 height: 100vh;
 background: url('../img/sing_different_7.jpg');
 background-size: cover;
-background-position: 100% 100%;
+background-position: 55% 100%;
 
 
 display: flex;
