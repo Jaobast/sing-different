@@ -44,96 +44,13 @@ body {
     background-color: #E2CFDB;
 }
 
-a {
-    color: #D1C3BE;
-}
-
-/* HAMBURGER   HAMBURGER   HAMBURGER   HAMBURGER   HAMBURGER*/
-
-.menü {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  position:fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 10;
-}
-.hamRotate.active {
-  transform: rotate(45deg);
-}
-.menü.active {
-  transform: rotate(180deg);
-}
-.line {
-  fill:none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#70698f;
-  stroke-width:5.5;
-  stroke-linecap:round;
-}
-.menü .top {
-  stroke-dasharray: 40 82;
-}
-.menü .bottom {
-  stroke-dasharray: 40 82;
-}
-.menü.active .top {
-  stroke-dasharray: 14 82;
-  stroke-dashoffset: -72px;
-}
-.menü.active .bottom {
-  stroke-dasharray: 14 82;
-  stroke-dashoffset: -72px;
-}
-
-[type="checkbox"] {
-  position: absolute;
-  left: -9999px;
-}
-
-[type="checkbox"]:checked ~ .form {
-  transform: translate(0, -50%);
-}
-
-.form {
-  position: fixed;
-  top: 17%;
-  right: 0;
-
-  max-height: 90vh;
-  transform: translate(100%, -50%);
-  padding: 30px;
-  overflow: auto;
-  z-index: 1;
-
-  transition: all 0.35s ease-in-out;
-}
-
-.navbar{
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.navbar a{
-  color:#70698f;
-  font: 20px/1.5 sans-serif;
-}
-
-
 /* HEADER   HEADER   HEADER   HEADER   HEADER*/
 
 header {
-    height: 100vh;
-    background:  url('../img/sing_different_15.jpg'), no-repeat;;
-    background-size: cover;
-    background-position: 65% 50%;
+  height: 100vh;
+  background:  url('../img/sing_different_15.jpg'), no-repeat;;
+  background-size: cover;
+  background-position: 65% 50%;
 }
 
 header::before {
@@ -237,13 +154,13 @@ header .logo {
   gap: 10px;
 }
 
-
 .tab img{
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%);
+  cursor: pointer;
 }
 .tab:hover label {
 	border-top-color: #333;
@@ -254,11 +171,12 @@ header .logo {
 	overflow-x: hidden;
 }
 
-#galerie h1{
+#galerie h2{
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
+  color: #D1C3BE;
 }
 
 .pics {
@@ -301,36 +219,37 @@ header .logo {
 /* PLAYLIST    PLAYLIST    PLAYLIST    PLAYLIST    PLAYLIST*/
 
 #playlist {
-  height: 100vh;
-  background: url('../img/sing_different_7.jpg');
-  background-size: cover;
-  background-position: 100% 100%;
+height: 100vh;
+background: url('../img/sing_different_7.jpg');
+background-size: cover;
+background-position: 100% 100%;
 
 
-  display: flex;
-  flex-direction:column;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-#playlist h2,
-#playlist h3 {
-  color:  #D1C3BE;
-  text-align: center;
-  z-index: 1;
+display: flex;
+flex-direction:column;
+align-content: center;
+flex-wrap: wrap;
+position: relative;
 }
 
 .playlistText{
-  margin: 100px;
+color:  #D1C3BE;
+text-align: center;
+position: relative;
+top: 10%;
 }
 
-#songs label{
+.song label{
   color:  #D1C3BE;
 }
 
-.cover{
-  text-align: left;
-  margin-top: 400px;
+#auswahl{
+display: flex;
+flex-direction: column;
+position: absolute;
+bottom: 5%;
+left: 50%;
+transform: translateX(-50%);
 }
 
 #audioPlayer{
@@ -408,4 +327,23 @@ footer img{
       position: relative;
       padding-top: 5%;
     }
+
+    /* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
+    .tab img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) img,
+    .tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) img,
+    .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) img,
+    .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) img,
+    .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) img,
+    .tabbed [type="radio"]:nth-of-type(6):checked ~ .tabs .tab:nth-of-type(6) img,
+    .tabbed [type="radio"]:nth-of-type(7):checked ~ .tabs .tab:nth-of-type(7) img{
+      width: 60px;
+      height: 60px;
+      top: -8px;
+    }
+
 }

@@ -9,32 +9,8 @@
     </head>
 
     <body>
-
-        <div id="hamburger">
-            <input type="checkbox" id="mycheckbox">
-            <label for="mycheckbox" class="feedback-label">
-        
-              <svg class="menü" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-                <path class="line top"
-                      d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
-                <path class="line middle"
-                      d="m 70,50 h -40" />
-                <path class="line bottom"
-                      d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
-              </svg>
-            </label>
-        
-            <form class="form" action="">
-              <div class="navbar" action="">
-                <a href="#header" class="goheader">Home</a>
-                <a href="#intro" class="gohome">SingDiferent</a>
-                <a href="#galerie" class="gogalerie">Galerie</a>
-                <a href="#playlist" class="goplaylist">Songs</a>
-              </div>
-            </form>
-        </div>
     
-        <header id="header">
+        <header>
             <img src="./img/logo_sing_different_2023.png" alt="Logo Sing Different" class="logo">
         </header>
           
@@ -52,7 +28,7 @@
     
     
             <div id="galerie">
-                <h1>So sehen wir uns</h1>
+                <h2>So sehen wir uns</h2>
                 
                 <div class="tabbed">
                     <input type="radio" id="pic1" name="css-tabs" checked>
@@ -107,52 +83,50 @@
     
     
             <div id="playlist">
+
                 <div class="playlistText">
                     <h2>Das ist unsere Musik!</h2>
                     <h3>Hörproben</h3>
                 </div>
     
-                <div id="songs">
+                <div id="auswahl">
     
-                    <div class="cover">
-                       <div class="switch">
-                          <input type="radio" name="audio" id="audio1" value="./media/Break_My_Heart.mp3">
-                          <label for="audio1">„Break my Heart“ von <span>Dua Lipa</span></label>
-                      </div>
-    
-                      <div class="switch">
+                    <div class="song">
+                        <input type="radio" name="audio" id="audio1" value="./media/Break_My_Heart.mp3">
+                        <label for="audio1">„Break my Heart“ von <span>Dua Lipa</span></label>
+                    </div>
+                    <div class="song">
                         <input type="radio" name="audio" id="audio2" value="./media/Dont_Let_Me_Down.mp3">
                         <label for="audio2">„Don't let me down“ von <span>Chainsmokers</span></label>
-                      </div>
-    
-                      <div class="switch">
+                    </div>
+                    <div class="song">
                         <input type="radio" name="audio" id="audio3" value="./media/Castle_on_the_Hill.mp3">
                         <label for="audio3">„Castle on the Hill“ von <span>Ed Sheeran</span></label>
-                      </div>
-                    </div> 
-             
-                    <div id="audioPlayer">
-                       <audio controls>
-                       Dein Browser unterstützt leider nicht das Audio-Element.
-                       </audio>
                     </div>
+
+                    <audio id="audioPlayer" controls>
+                        Dein Browser unterstützt leider nicht das Audio-Element.
+                    </audio>
+
                 </div>
+        
+                
     
                 <script>
-                   const audioPlayer = document.getElementById('audioPlayer');
-                   const radioButtons = document.querySelectorAll('input[type="radio"][name="audio"]');
-                 
-                   radioButtons.forEach(radio => {
-                     radio.addEventListener('change', () => {
-                         if (radio.checked) {
-                             audioPlayer.src = radio.value;
-                             audioPlayer.pause();
-                             audioPlayer.load();
-                             audioPlayer.play();
-                         }
-                     });
-                     });
-                 </script>
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    const radioButtons = document.querySelectorAll('input[type="radio"][name="audio"]');
+                    
+                    radioButtons.forEach(radio => {
+                        radio.addEventListener('change', () => {
+                            if (radio.checked) {
+                                audioPlayer.src = radio.value;
+                                audioPlayer.pause();
+                                audioPlayer.load();
+                                audioPlayer.play();
+                            }
+                        });
+                    });
+                </script>
              </div>
     
     
