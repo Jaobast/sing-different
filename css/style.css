@@ -42,6 +42,7 @@ body {
     font-family: 'BricolageGrotesque';
     color: #0D0C0B;
     background-color: #E2CFDB;
+    height: -webkit-fill-available;
 }
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER*/
