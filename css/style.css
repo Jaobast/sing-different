@@ -35,20 +35,19 @@
 
 html {
     font-size: 15px;
-    height: -webkit-fill-available;
 }
 
 body {
     font-family: 'BricolageGrotesque';
     color: #0D0C0B;
     background-color: #E2CFDB;
-    height: -webkit-fill-available;
 }
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER*/
 
 header {
   height: 100vh;
+  height: -webkit-fill-available;
   background:  url('../img/sing_different_15.jpg'), no-repeat;;
   background-size: cover;
   background-position: 65% 50%;
@@ -144,6 +143,7 @@ header .logo {
 #galerie {
 	width: 100vw;
   height: 100vh;
+  height: -webkit-fill-available;
   margin: 0;
   padding: 0;
 	background: #fff;
@@ -248,6 +248,7 @@ header .logo {
 
 #playlist {
 height: 100vh;
+height: -webkit-fill-available;
 background: url('../img/sing_different_7.jpg');
 background-size: cover;
 background-position: 55% 100%;
