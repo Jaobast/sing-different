@@ -249,6 +249,8 @@ display: flex;
 flex-direction: column;
 position: absolute;
 bottom: 5%;
+left: 50%;
+transform: translateX(-50%);
 }
 
 #audioPlayer{
@@ -318,6 +320,16 @@ footer img{
       padding-top: 5%;
     }
 
+    /* INTRO    INTRO    INTRO    INTRO    INTRO*/
+    .text {
+      margin-top: 100px;
+      max-width: 80%;
+    }
+    
+    .text p {
+      font-size: 14px;
+    }
+
     /* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
 
     #galerie {
@@ -326,9 +338,7 @@ footer img{
     }
 
     .picture{
-      width: 100vw;
       height: 80vh;
-      object-fit: cover;
       object-position: 50% 100%;
     }
 
