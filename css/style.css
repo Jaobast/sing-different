@@ -370,17 +370,6 @@ footer img{
 
     /* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
 
-    #galerie {
-      width: 100vw;
-      max-height: 80vw;
-      position: relative;
-    }
-
-    .picture{
-      height: 80vw;
-      object-position: 50% 100%;
-    }
-
     .tab img{
       width: 40px;
       height: 40px;
