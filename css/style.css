@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'BricolageGrotesque';
+    src: url(../fonts/BricolageGrotesque-Regular.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'BricolageGrotesque';
+    src: url(../fonts/BricolageGrotesque-Light.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'BricolageGrotesque';
+    src: url(../fonts/BricolageGrotesque-SemiBold.ttf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'BricolageGrotesque';
+    src: url(../fonts/BricolageGrotesque-Bold.ttf);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Dephiana';
+    src: url(../fonts/Dephiana.ttf);
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    font-family: 'BricolageGrotesque';
+    color: #0D0C0B;
+    background-color: #E2CFDB;
+}
+
+a {
+    color: #D1C3BE;
+}
+
+/* HAMBURGER   HAMBURGER   HAMBURGER   HAMBURGER   HAMBURGER*/
+
+.menü {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  position:fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.menü.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#70698f;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.menü .top {
+  stroke-dasharray: 40 82;
+}
+.menü .bottom {
+  stroke-dasharray: 40 82;
+}
+.menü.active .top {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+.menü.active .bottom {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:checked ~ .form {
+  transform: translate(0, -50%);
+}
+
+.form {
+  position: fixed;
+  top: 17%;
+  right: 0;
+
+  max-height: 90vh;
+  transform: translate(100%, -50%);
+  padding: 30px;
+  overflow: auto;
+  z-index: 1;
+
+  transition: all 0.35s ease-in-out;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.navbar a{
+  color:#70698f;
+  font: 20px/1.5 sans-serif;
+}
+
+
+/* HEADER   HEADER   HEADER   HEADER   HEADER*/
+
+header {
+    height: 100vh;
+    background:  url('../img/sing_different_15.jpg'), no-repeat;;
+    background-size: cover;
+    background-position: 65% 50%;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(247,243,237,1) 0%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+}
+
+header .logo {
+  max-width: 200px;
+  margin: unset;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* INTRO    INTRO    INTRO    INTRO    INTRO*/
+
+#intro {
+  height: auto;
+  min-height: 130vh;
+  background: url('../img/bearbeitet/sing_different_img_5.jpg');
+  background-size: cover;
+  background-position: 100% 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#intro::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(247,243,237,1) 0%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 100vh;
+}
+
+#intro::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+
+.text {
+  margin-top: 200px;
+  margin-bottom: 500px;
+  max-width: 50%;
+  z-index: 1;
+}
+
+.text p {
+  margin-bottom: 50px;
+  font-size: calc(6px + 1vw);
+  text-align: justify;
+  font-weight: 300;
+}
+
+
+/* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
+
+#galerie::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 30%;
+}
+#galerie {
+	width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+	background: #fff;
+  position: relative;
+}
+
+.tabbed [type="radio"] {
+	display: none;
+}
+
+.tabs {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+	display: flex;
+	align-items: stretch;
+	list-style: none;
+  gap: 10px;
+}
+
+
+.tab img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.tab:hover label {
+	border-top-color: #333;
+	color: #333;
+}
+
+.tabbed {
+	overflow-x: hidden;
+}
+
+#galerie h1{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pics {
+	display: none;
+}
+
+.picture{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) img,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) img,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) img,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) img,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) img,
+.tabbed [type="radio"]:nth-of-type(6):checked ~ .tabs .tab:nth-of-type(6) img,
+.tabbed [type="radio"]:nth-of-type(7):checked ~ .tabs .tab:nth-of-type(7) img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: -12px;
+  filter: grayscale(0%);;
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .pics:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .pics:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .pics:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .pics:nth-of-type(4),
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .pics:nth-of-type(5),
+.tabbed [type="radio"]:nth-of-type(6):checked ~ .pics:nth-of-type(6),
+.tabbed [type="radio"]:nth-of-type(7):checked ~ .pics:nth-of-type(7){
+	display: block;
+}
+
+
+/* PLAYLIST    PLAYLIST    PLAYLIST    PLAYLIST    PLAYLIST*/
+
+#playlist {
+  height: 100vh;
+  background: url('../img/sing_different_7.jpg');
+  background-size: cover;
+  background-position: 100% 100%;
+
+
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#playlist h2,
+#playlist h3 {
+  color:  #D1C3BE;
+  text-align: center;
+  z-index: 1;
+}
+
+.playlistText{
+  margin: 100px;
+}
+
+#songs label{
+  color:  #D1C3BE;
+}
+
+.cover{
+  text-align: left;
+  margin-top: 400px;
+}
+
+#audioPlayer{
+  margin-top: 100px;
+}
+
+#songs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER    FOOTER    FOOTER    FOOTER    FOOTER*/
+
+
+footer{
+  height: 40vh;
+  background: url('../img/sing_different_9.jpg');
+  background-size: cover;
+  background-position: 100% 60%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.logo_footer{
+  width: 120px;
+  height: auto;
+  margin-left: 30px;
+}
+
+
+.info {
+  color: white;
+  margin-left: 30px;
+}
+
+.p_01{
+  margin-top: 30px;
+}
+
+ul{
+  color: white;
+  margin-left: 30px;
+}
+
+footer img{
+  width: 30px;
+  height: auto;
+  margin-left: 0px;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width: 800px) {
+    header::before {
+      content: "";
+      position: absolute;
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+      width: 100%;
+      height: 20vh;
+    }
+
+    header .logo {
+      z-index: 2;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 5%;
+    }
+}
