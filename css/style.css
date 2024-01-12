@@ -335,7 +335,7 @@ footer img{
 
     #galerie {
       width: 100vw;
-      height: 80vw;
+      max-height: 80vw;
     }
 
     .picture{
