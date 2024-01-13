@@ -398,36 +398,43 @@ footer img{
     .picture1{
       background: url('../img/sing_different_5-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture2{
       background: url('../img/sing_different_17-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture3{
       background: url('../img/sing_different_14-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture4{
       background: url('../img/sing_different_7-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture5{
       background: url('../img/sing_different_10-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture6{
       background: url('../img/sing_different_1-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .picture7{
       background: url('../img/sing_different_3-mobile.jpg');
       background-size: cover;
+      background-position: 65% 50%;
     }
 
     .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) img,
