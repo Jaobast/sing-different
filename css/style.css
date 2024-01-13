@@ -350,6 +350,15 @@ footer img{
 
 
 @media (max-width: 800px) {
+
+    header {
+      height: 100vh;
+      height: -webkit-fill-available;
+      background:  url('../img/sing_different_14-mobile.jpg'), no-repeat;;
+      background-size: cover;
+      background-position: 65% 50%;
+    }
+
     header .logo {
       z-index: 2;
       display: block;
@@ -370,7 +379,6 @@ footer img{
     }
 
     /* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
-
     .tab img{
       width: 40px;
       height: 40px;
@@ -381,6 +389,45 @@ footer img{
       bottom: 0.5%;
       left: calc(50% - 25px);
       transform: translateX(-50%);
+    }
+
+    .pics img{
+      opacity: 0;
+    }
+
+    .picture1{
+      background: url('../img/sing_different_5-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture2{
+      background: url('../img/sing_different_17-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture3{
+      background: url('../img/sing_different_14-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture4{
+      background: url('../img/sing_different_7-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture5{
+      background: url('../img/sing_different_10-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture6{
+      background: url('../img/sing_different_1-mobile.jpg');
+      background-size: cover;
+    }
+
+    .picture7{
+      background: url('../img/sing_different_3-mobile.jpg');
+      background-size: cover;
     }
 
     .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) img,
