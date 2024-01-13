@@ -365,6 +365,7 @@ footer img{
       margin: 0 auto;
       position: relative;
       padding-top: 5%;
+      filter: brightness(0%) invert(100%);
     }
 
     /* INTRO    INTRO    INTRO    INTRO    INTRO*/
