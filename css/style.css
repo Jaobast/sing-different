@@ -231,27 +231,29 @@ header .logo {
 
 #intro02 {
   background-color: black;
+  height: 100vh;
 
 
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items:center;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
 }
 
 .text02 {
-  margin-top: 200px;
-  margin-bottom: 500px;
+  gap: 50px;
   max-width: 50%;
   z-index: 1;
   color: #D1C3BE;
-  margin-top: 35vh;
-  margin-bottom: 20vh;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text02 p {
-  margin-bottom: 50px;
   font-size: calc(6px + 1vw);
   text-align: justify;
   font-weight: 300;
