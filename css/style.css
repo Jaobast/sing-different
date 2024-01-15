@@ -246,8 +246,8 @@ header .logo {
   max-width: 50%;
   z-index: 1;
   color: #D1C3BE;
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-top: 35vh;
+  margin-bottom: 20vh;
 }
 
 .text02 p {
@@ -400,13 +400,13 @@ footer img{
     }
 
     /* INTRO    INTRO    INTRO    INTRO    INTRO*/
-    .text, .text02 {
+    .text{
       margin-top: 100px;
       margin-bottom: 250px;
       max-width: 80%;
     }
     
-    .text p, .text02 p{
+    .text p{
       font-size: 14px;
     }
 
@@ -486,6 +486,17 @@ footer img{
       background-size: cover;
       background-position: 50% 50%;
     }
-      
+
+    /* INTRO02    INTRO02    INTRO02    INTRO02    INTRO02*/
+    
+    .text02 {
+      margin-top: 100px;
+      margin-bottom: 250px;
+      max-width: 80%;
+    }
+    
+    .text02 p{
+      font-size: 14px;
+    }
 
 }
