@@ -400,13 +400,13 @@ footer img{
     }
 
     /* INTRO    INTRO    INTRO    INTRO    INTRO*/
-    .text {
+    .text, .text02 {
       margin-top: 100px;
       margin-bottom: 250px;
       max-width: 80%;
     }
     
-    .text p {
+    .text p, .text02 p{
       font-size: 14px;
     }
 
