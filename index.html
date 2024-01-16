@@ -95,20 +95,34 @@
                 </div>
     
                 <div id="auswahl">
-    
-                    <div class="song">
-                        <input type="radio" name="audio" id="audio1" value="./media/Break_My_Heart.mp3">
-                        <label for="audio1">„Break my Heart“ von <span>Dua Lipa</span></label>
-                    </div>
-                    <div class="song">
-                        <input type="radio" name="audio" id="audio2" value="./media/Dont_Let_Me_Down.mp3">
-                        <label for="audio2">„Don't let me down“ von <span>Chainsmokers</span></label>
-                    </div>
-                    <div class="song">
-                        <input type="radio" name="audio" id="audio3" value="./media/Castle_on_the_Hill.mp3">
-                        <label for="audio3">„Castle on the Hill“ von <span>Ed Sheeran</span></label>
-                    </div>
 
+                    <div class="tabbed02">
+                        <input type="radio" name="audio" id="audio1" value="./media/Break_My_Heart.mp3" checked>
+                        <input type="radio" name="audio" id="audio2" value="./media/Dont_Let_Me_Down.mp3">
+                        <input type="radio" name="audio" id="audio3" value="./media/Castle_on_the_Hill.mp3">
+                        
+                        <ul class="tabs02">
+                            <li class="tab02"><label for="audio1"><img src="./img/sing_different_5.jpg"></label></li>
+                            <li class="tab02"><label for="audio2"><img src="./img/sing_different_17.jpg"></label></li>
+                            <li class="tab02"><label for="audio3"><img src="./img/sing_different_14.jpg"></label></li>
+                        </ul>
+                        
+                        <div class="lied song">
+                            <p class="songName">Break my Heart</p>
+                            <p class="artist">Dua Lipa</p>
+                        </div>
+                        
+                        <div class="lied song">
+                            <p class="songName">Don't let me down</p>
+                            <p class="artist">Chainsmokers</p>
+                        </div>
+        
+                        <div class="lied song">
+                            <p class="songName">Castle on the Hill</p>
+                            <p class="artist">Ed Sheeran</p>
+                        </div>
+                    </div>
+    
                     <audio id="audioPlayer" controls>
                         Dein Browser unterstützt leider nicht das Audio-Element.
                     </audio>
