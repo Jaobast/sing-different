@@ -463,14 +463,6 @@ footer img{
 
 
 @media (max-width: 800px) {
-    header .logo_fixed{
-      position: fixed;
-      background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 95%);
-      height: 10%;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
 
     header {
       background:  url('../img/sing_different_14-mobile.jpg'), no-repeat;;
@@ -484,7 +476,7 @@ footer img{
       margin:0;
       position: fixed;
       left: 50%;
-      top: -3vh;
+      top: -2vh;
       transform: translateX(-50%);
       height: 7vh;
       padding-top: 5%;
