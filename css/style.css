@@ -483,6 +483,14 @@ footer img{
       filter: brightness(0%) invert(100%);
     }
 
+    header .logo_fixed{
+      height: 10vh;
+      width: 100vw;
+      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+      position: fixed;
+      z-index: 1000;
+    }
+
     /* INTRO    INTRO    INTRO    INTRO    INTRO*/
     .text{
       margin-top: 100px;
