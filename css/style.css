@@ -484,11 +484,14 @@ footer img{
     }
 
     header .logo_fixed{
-      height: 10vh;
+      height: 15vh;
       width: 100vw;
-      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0) 100%);
       position: fixed;
       z-index: 1000;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      -webkit-mask: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 130%);
     }
 
     /* INTRO    INTRO    INTRO    INTRO    INTRO*/
