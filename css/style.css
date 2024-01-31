@@ -40,7 +40,7 @@ html {
 body {
     font-family: 'BricolageGrotesque';
     color: #0D0C0B;
-    background-color: #E2CFDB;
+    background-color: #000;
 }
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER*/
@@ -118,6 +118,13 @@ header .logo {
   font-size: calc(6px + 1vw);
   text-align: justify;
   font-weight: 300;
+  line-height: 1.3;
+}
+
+.text .SD{
+  font-weight: 700;
+  color: #6d688c;
+  font-style: italic;
 }
 
 
@@ -185,13 +192,13 @@ header .logo {
 }
 
 #galerie h2{
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #D1C3BE;
-  font-size: 40px;
- font-weight: 700;
+    color:  #D1C3BE;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 40px;
+    font-weight: 700;
+    width: 100vw;
 }
 
 #galerie h2 .sehen{
@@ -434,10 +441,11 @@ footer::before {
 footer{
   background-color: #000;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  height: 250px;
+  position: relative;
 }
 
 .logo_footer{
@@ -448,18 +456,12 @@ footer{
 .info div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: #E2CFDB;
   padding: 10px;
 }
 
 footer .email{
   color: #6d688c;
-}
-
-footer img{
-  width: 30px;
-  height: auto;
 }
 
 .social{
@@ -475,12 +477,29 @@ footer a{
 footer ul{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-footer img{
+footer li img{
   padding: 10px 5px;
+  width: 30px;
+  height: auto;
 }
+
+footer .copy-container{
+  color: #E2CFDB;
+  bottom: 10%;
+}
+
+footer .logo-container{
+  top: 25%;
+}
+
+footer .logo-container, footer .copy-container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 
 
@@ -529,6 +548,10 @@ footer img{
     }
 
     /* GALERIE    GALERIE     GALERIE     GALERIE    GALERIE*/
+    #galerie h2{
+      font-size: 30px;
+    }
+
     .tab img{
       width: 40px;
       height: 40px;
@@ -601,6 +624,10 @@ footer img{
 
     /* PLAYLIST   PLAYLIST   PLAYLIST*/
 
+    .playlistText{
+      font-size: 30px;
+      }
+
     #playlist {
       background: url('../img/sing_different_img_3-mobile.jpg');
       background-size: cover;
@@ -614,7 +641,7 @@ footer img{
     /* INTRO02    INTRO02    INTRO02    INTRO02    INTRO02*/
     
     .text02 {
-      margin-top: 100px;
+      margin-top: 250px;
       margin-bottom: 250px;
       max-width: 80%;
     }
@@ -625,6 +652,59 @@ footer img{
 
     #intro02 {
       height: 80vh;
+    }
+
+    /* FOOTER   FOOTER   FOOTER   FOOTER */
+
+    footer{
+      flex-direction: column;
+      height: auto;
+    }
+
+    .info div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #E2CFDB;
+      padding: 10px;
+    }
+    
+    footer .email{
+      color: #6d688c;
+    }
+    
+    footer img{
+      width: 30px;
+      height: auto;
+    }
+    
+    .social{
+      display: flex;
+      flex-direction: row;
+    }
+    
+    footer a{
+      text-decoration: none;
+      color:#E2CFDB;
+    }
+    
+    footer ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    footer img{
+      padding: 10px 5px;
+    }
+
+    footer .logo-container, footer .copy-container{
+      position: static;
+      transform: none;
+    }
+
+    footer .copy-container{
+      margin-bottom: 20px;
     }
 
 }
