@@ -306,6 +306,7 @@ top: 10%;
 }
 
 #auswahl{
+width: 500px;
 display: flex;
 flex-direction: column;
 position: absolute;
