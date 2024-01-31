@@ -158,7 +158,7 @@ header .logo {
 .tabs {
   position: absolute;
   bottom: 3%;
-  left: calc(50% - 40px);
+  left: 50%;
   transform: translateX(-50%);
 	display: flex;
 	list-style: none;
@@ -324,7 +324,7 @@ border-radius: 20px;
 }
 
 #audioPlayer{
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 #songs{
@@ -338,15 +338,10 @@ border-radius: 20px;
 }
 
 .tabs02 {
-  position: absolute;
-  top: 60%;
-  left: calc(50% - 40px);
-  transform: translateX(-50%) translateY(-50%);
 	display: flex;
 	list-style: none;
   gap: 10px;
   max-width: 100vw;
-  z-index: 10;
 }
 
 .tab02 img{
@@ -376,6 +371,8 @@ border-radius: 20px;
 
 .lied {
 	display: none;
+  text-align: center;
+  color: #D1C3BE;
 }
 
 .picture{
@@ -391,20 +388,15 @@ border-radius: 20px;
   height: 60px;
   border-radius: 5px;
   object-fit: cover;
+  filter: grayscale(0%);
   position: relative;
-  top: -12px;
-  filter: grayscale(0%);;
+  bottom:10px;
 }
 
 .tabbed02 [type="radio"]:nth-of-type(1):checked ~ .song:nth-of-type(1),
 .tabbed02 [type="radio"]:nth-of-type(2):checked ~ .song:nth-of-type(2),
 .tabbed02 [type="radio"]:nth-of-type(3):checked ~ .song:nth-of-type(3){
 	display: block;
-}
-
-.lied{
-  text-align: center;
-  color: #D1C3BE;
 }
 
 
@@ -523,7 +515,7 @@ footer img{
 
     .tabs {
       bottom: 0.5%;
-      left: calc(50% - 25px);
+      left: (50% + 8px);
       transform: translateX(-50%);
     }
 
