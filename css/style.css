@@ -577,11 +577,17 @@ footer img{
       top: -8px;
     }
 
+    /* PLAYLIST   PLAYLIST   PLAYLIST*/
+
     #playlist {
       background: url('../img/sing_different_img_3-mobile.jpg');
       background-size: cover;
       background-position: 50% 50%;
     }
+
+    #auswahl{
+      width: auto;
+      }
 
     /* INTRO02    INTRO02    INTRO02    INTRO02    INTRO02*/
     
