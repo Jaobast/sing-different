@@ -309,6 +309,8 @@ top: 10%;
 width: 500px;
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 position: absolute;
 bottom: 15%;
 left: 50%;
@@ -416,51 +418,57 @@ footer::before {
 }
 
 footer{
-  height: 40vh;
-  background: url('../img/sing_different_9.jpg');
-  background-size: cover;
-  background-position: 100% 60%;
-
+  background-color: #000;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
-
 
 .logo_footer{
   width: 120px;
   height: auto;
-  margin-left: 30px;
 }
 
-
-.info {
-  color: white;
-  margin-left: 30px;
-  z-index: 10;
+.info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E2CFDB;
+  padding: 10px;
 }
 
-.p_01{
-  margin-top: 30px;
-}
-
-ul{
-  color: white;
-  margin-left: 30px;
-  z-index: 10;
+footer .email{
+  color: #6d688c;
 }
 
 footer img{
   width: 30px;
   height: auto;
-  margin-left: 0px;
-  z-index: 10;
 }
 
 .social{
   display: flex;
   flex-direction: row;
 }
+
+footer a{
+  text-decoration: none;
+  color:#E2CFDB;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img{
+  padding: 10px 5px;
+}
+
+
 
 
 @media (max-width: 800px) {
