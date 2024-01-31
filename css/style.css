@@ -655,56 +655,17 @@ footer .logo-container, footer .copy-container{
     }
 
     /* FOOTER   FOOTER   FOOTER   FOOTER */
-
     footer{
-      flex-direction: column;
-      height: auto;
-    }
-
-    .info div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #E2CFDB;
-      padding: 10px;
-    }
-    
-    footer .email{
-      color: #6d688c;
-    }
-    
-    footer img{
-      width: 30px;
-      height: auto;
-    }
-    
-    .social{
-      display: flex;
       flex-direction: row;
-    }
-    
-    footer a{
-      text-decoration: none;
-      color:#E2CFDB;
-    }
-    
-    footer ul{
-      display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
+      height: 250px;
+      position: relative;
+      font-size: 12px;
     }
-    
-    footer img{
-      padding: 10px 5px;
-    }
-
-    footer .logo-container, footer .copy-container{
-      position: static;
-      transform: none;
+    footer .logo-container{
+      top: 0%;
     }
 
-    footer .copy-container{
-      margin-bottom: 20px;
-    }
 
 }
