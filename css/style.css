@@ -190,6 +190,13 @@ header .logo {
   left: 50%;
   transform: translateX(-50%);
   color: #D1C3BE;
+  font-size: 40px;
+ font-weight: 700;
+}
+
+#galerie h2 .sehen{
+  font-weight: 300;
+  font-style: italic;
 }
 
 .pics {
@@ -259,6 +266,13 @@ header .logo {
   text-align: justify;
   font-weight: 300;
   color: #D1C3BE;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.text02 .gesang{
+  font-weight: 400;
+  font-style: italic;
 }
 
 
@@ -299,7 +313,15 @@ color:  #D1C3BE;
 text-align: center;
 position: relative;
 top: 10%;
+font-size: 40px;
+font-weight: 700;
 }
+
+.playlistText .musik{
+  font-weight: 300;
+  font-style: italic;
+}
+
 
 .song label{
   color:  #D1C3BE;
