@@ -3,21 +3,6 @@
     src: url(../fonts/BricolageGrotesque-Regular.ttf);
     font-weight: 400;
   }
-  @font-face {
-    font-family: 'BricolageGrotesque';
-    src: url(../fonts/BricolageGrotesque-Light.ttf);
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: 'BricolageGrotesque';
-    src: url(../fonts/BricolageGrotesque-SemiBold.ttf);
-    font-weight: 600;
-  }
-  @font-face {
-    font-family: 'BricolageGrotesque';
-    src: url(../fonts/BricolageGrotesque-Bold.ttf);
-    font-weight: 700;
-  }
 
   @font-face {
     font-family: 'Dephiana';
@@ -41,6 +26,50 @@ body {
     font-family: 'BricolageGrotesque';
     color: #0D0C0B;
     background-color: #000;
+}
+
+/* ANIMATION  ANIMATION  ANIMATIONM */
+
+.logo__container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#animation{
+  height: 300vh;
+  width: 100vw;
+  background-color: #000;
+  position: absolute;
+  z-index: 1000;
+}
+
+@keyframes backgroundAnimation{
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes logoAnimation{
+  20% {transform: scale(1);}
+  30% {transform: scale(0.7);}
+  75% {transform: scale(110);}
+  100% {transform: scale(1);}
+}
+
+
+
+#animation{
+  animation: backgroundAnimation 2.5s linear forwards;
+}
+
+#animation .logo{
+  animation: logoAnimation 4s ease-in forwards;
+}
+
+#animaton::animationiteration {
+  display: none;
 }
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER*/
@@ -506,6 +535,13 @@ footer .logo-container, footer .copy-container{
 
 @media (max-width: 800px) {
 
+  /* ANIMATION  ANIMATION  ANIMATION */
+  #animation .logo{
+    width: 75vw;
+    height: auto;
+  }
+
+  /* HEADER  HEADER  HEADER  HEADER */
     header {
       background:  url('../img/sing_different_14-mobile.jpg'), no-repeat;;
       background-size: cover;
